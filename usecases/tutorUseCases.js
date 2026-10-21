@@ -50,6 +50,10 @@ const deleteTutorDB = async (codigo) => {
       return "Tutor removido com sucesso!";
     }
   } catch (err) {
+    // Código de erro 23503 no PostgreSQL = Foreign Key Violation (Chave Estrangeira)
+    if (err.code === '23503') {
+      throw "Este tutor não pode ser excluído pois possui Pets vinculados a ele. Remova os Pets primeiro!";
+    }
     throw "Erro ao remover o tutor: " + err;
   }
 };
