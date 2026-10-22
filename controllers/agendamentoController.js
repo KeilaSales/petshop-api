@@ -1,3 +1,7 @@
+//controller = Contêm as funções assíncronas 
+// (async/await) que chamam as funções 
+// do usecases e retornam o resultado para o frontend.
+
 const {
   getAgendamentosDB,
   addAgendamentoDB,

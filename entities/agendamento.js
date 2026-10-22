@@ -1,3 +1,9 @@
+//usecases = Contêm as funções assíncronas 
+// (async/await) que executam as queries SQL nativas 
+// (SELECT, INSERT, UPDATE, DELETE) 
+// no banco de dados usando o pool.query()
+
+
 class Agendamento {
   constructor(codigo, servico, data_agendamento, valor, pet, pet_nome) {
     this.codigo = codigo;

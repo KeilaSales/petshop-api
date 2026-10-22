@@ -1,3 +1,8 @@
+//Arquivo principal do servidor 
+// Express. Inicia a API, ativa o cors() para o 
+// frontend conseguir acessar 
+// e registra as rotas principais.
+
 const express = require('express');
 const cors = require('cors');
 const rotas = require('./routes/rotas');
